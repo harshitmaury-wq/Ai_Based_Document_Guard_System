@@ -1,0 +1,60 @@
+{
+    "architecture": "DocumentFusionNetwork",
+    "streams": [
+        "ela_efficientnet_b0",
+        "rgb_resnet50"
+    ],
+    "fusion_dim": 3328,
+    "epochs": 5,
+    "batch_size": 4,
+    "lr": 0.0001,
+    "dropout_p": 0.4,
+    "best_epoch": 5,
+    "best_val_loss": 0.6862655878067017,
+    "total_training_time_seconds": 112.26,
+    "parameter_breakdown": {
+        "total": 28384317,
+        "trainable": 16962865,
+        "frozen": 11421452,
+        "ela_trainable": 1129392,
+        "rgb_trainable": 14964736,
+        "classifier_trainable": 868737
+    },
+    "metrics": {
+        "train_loss": [
+            0.6972,
+            0.6879,
+            0.6848,
+            0.6697,
+            0.6612
+        ],
+        "train_acc": [
+            50.0,
+            50.0,
+            50.0,
+            56.25,
+            62.5
+        ],
+        "val_loss": [
+            0.6945,
+            0.6957,
+            0.694,
+            0.6888,
+            0.6863
+        ],
+        "val_acc": [
+            50.0,
+            50.0,
+            50.0,
+            50.0,
+            50.0
+        ],
+        "epoch_times": [
+            25.88,
+            23.36,
+            20.31,
+            20.45,
+            20.05
+        ]
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "evaluation_target": "final_forgery_detector.pth",
+    "validation_samples_count": 4,
+    "metrics": {
+        "accuracy": 50.0,
+        "precision": 50.0,
+        "recall": 100.0,
+        "f1_score": 0.6667,
+        "roc_auc": 0.75,
+        "false_positive_rate": 100.0,
+        "false_negative_rate": 0.0,
+        "decision_threshold": 0.5
+    },
+    "confusion_matrix": {
+        "true_negatives": 0,
+        "false_positives": 2,
+        "false_negatives": 0,
+        "true_positives": 2,
+        "matrix_2x2": [
+            [
+                0,
+                2
+            ],
+            [
+                0,
+                2
+            ]
+        ]
+    },
+    "generated_artifacts": {
+        "loss_curve": "C:\\Users\\Harshit\\Desktop\\DocGuard\\evaluation\\loss_curve.png",
+        "accuracy_curve": "C:\\Users\\Harshit\\Desktop\\DocGuard\\evaluation\\accuracy_curve.png",
+        "confusion_matrix": "C:\\Users\\Harshit\\Desktop\\DocGuard\\evaluation\\confusion_matrix.png"
+    },
+    "sample_level_predictions": [
+        {
+            "file_path": "dataset\\real\\invoice_real_007.png",
+            "true_label": "Authentic",
+            "predicted_prob": 0.5233,
+            "predicted_label": "Forged",
+            "is_correct": false
+        },
+        {
+            "file_path": "dataset\\real\\invoice_real_004.png",
+            "true_label": "Authentic",
+            "predicted_prob": 0.5135,
+            "predicted_label": "Forged",
+            "is_correct": false
+        },
+        {
+            "file_path": "dataset\\forged\\invoice_forged_003.png",
+            "true_label": "Forged",
+            "predicted_prob": 0.5223,
+            "predicted_label": "Forged",
+            "is_correct": true
+        },
+        {
+            "file_path": "dataset\\forged\\invoice_forged_007.png",
+            "true_label": "Forged",
+            "predicted_prob": 0.5302,
+            "predicted_label": "Forged",
+            "is_correct": true
+        }
+    ]
+}

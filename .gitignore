@@ -1,0 +1,73 @@
+# =============================================================================
+# DocGuard - Git Ignore Rules
+# =============================================================================
+
+# 1. Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# 2. Python Bytecode, Caches & Compilations
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# 3. Model Weights & Checkpoints (>100MB exceeds GitHub push limits)
+# Note: 'final_forgery_detector.pth' is ~250MB and will be rejected by GitHub.
+# Use Git LFS or external cloud storage (e.g. Hugging Face, GDrive) for model distribution.
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.onnx
+*.h5
+
+# 4. Streamlit & Runtime Cache
+.streamlit/secrets.toml
+_temp_assets_*/
+evaluation/_temp_assets_*/
+
+# 5. Temporary & Log Files
+*.log
+*.tmp
+temp_*/
+test_verification_anomaly.png
+test_system_certificate.pdf
+evaluation/test_*.pdf
+evaluation/test_*.png
+
+# 6. Operating System & Editor Artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.agents/
+.gemini/

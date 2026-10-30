@@ -1,0 +1,49 @@
+{
+    "architecture": "ResNet-50",
+    "stream": "rgb_visual",
+    "epochs": 5,
+    "batch_size": 8,
+    "lr": 0.001,
+    "freeze_layer4": true,
+    "dropout_p": 0.4,
+    "best_epoch": 5,
+    "best_val_loss": 0.6847688555717468,
+    "total_training_time_seconds": 109.34,
+    "metrics": {
+        "train_loss": [
+            0.7085,
+            0.719,
+            0.677,
+            0.6731,
+            0.6507
+        ],
+        "train_acc": [
+            50.0,
+            50.0,
+            50.0,
+            56.25,
+            56.25
+        ],
+        "val_loss": [
+            0.6933,
+            0.6935,
+            0.6928,
+            0.6913,
+            0.6848
+        ],
+        "val_acc": [
+            50.0,
+            50.0,
+            50.0,
+            50.0,
+            50.0
+        ],
+        "epoch_times": [
+            23.62,
+            20.96,
+            21.38,
+            21.03,
+            20.91
+        ]
+    }
+}
